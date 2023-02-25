@@ -24,3 +24,52 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+ul {
+    margin-bottom: 0;
+    padding-left: 1em;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    font-family: Verdana;
+    font-size: 0.9em;
+    &:last-child {
+        margin: 0;
+    }
+}
+
+ul, ol{
+	li{
+		padding-bottom: 10px;
+		
+		&:last-of-type{
+			padding-bottom: 0;
+		}
+	}
+}
+
+th,
+td {
+    padding: 5px;
+    width: 50%;
+    border: 1px solid #000;
+}
+td.gutter{
+    width: 0%;
+}
+td.code{
+    width: auto;
+}
+
+pre{
+    background-color: #fff;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+code, em{
+    font-style: italic;
+	font-weight: bold;
+	font-family: inherit;
+}
