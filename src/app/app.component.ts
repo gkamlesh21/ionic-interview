@@ -39,6 +39,46 @@ export class AppComponent implements OnInit {
       title: "React Native",
       url: "/folder/React Native",
       icon: "logo-react",
+    },
+    {
+      title: "HTML",
+      url: "/folder/HTML",
+      icon: "logo-html5",
+    },
+    {
+      title: "CSS",
+      url: "/folder/CSS",
+      icon: "logo-css3",
+    },
+    {
+      title: "SCSS",
+      url: "/folder/SCSS",
+      icon: "logo-css3",
+    },
+    {
+      title: "JQuery",
+      url: "/folder/JQuery",
+      icon: "logo-javascript",
+    },
+    {
+      title: "Micro Frontend",
+      url: "/folder/Micro Frontend",
+      icon: "apps-outline",
+    },
+    {
+      title: "Agile & Scrum",
+      url: "/folder/Agile & Scrum",
+      icon: "analytics-outline",
+    },
+    {
+      title: "Software Engineering",
+      url: "/folder/Software Engineering",
+      icon: "laptop-outline",
+    },
+    {
+      title: "HR",
+      url: "/folder/HR",
+      icon: "people-circle-outline",
     }
   ];
   
