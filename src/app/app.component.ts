@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.overlaysWebView(true);
-      this.statusBar.backgroundColorByHexString('#ffffff');
+      // this.statusBar.backgroundColorByHexString('#ffffff');
       this.dataService.getFolderData().subscribe(
         (data: DataModel[]) => {
           // console.log(data);
