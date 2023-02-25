@@ -29,6 +29,16 @@ export class AppComponent implements OnInit {
       title: "Angular",
       url: "/folder/Angular",
       icon: "logo-angular"
+    },
+    {
+      title: "React",
+      url: "/folder/React",
+      icon: "logo-react",
+    },
+    {
+      title: "React Native",
+      url: "/folder/React Native",
+      icon: "logo-react",
     }
   ];
   

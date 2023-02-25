@@ -1,7 +1,7 @@
 {
-  "name": "angular",
+  "name": "interview",
   "version": "0.0.1",
-  "author": "Ionic Angular",
+  "author": "Ionic Interview",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -75,8 +75,6 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {}
     },
-    "platforms": [
-      "android"
-    ]
+    "platforms": []
   }
 }
