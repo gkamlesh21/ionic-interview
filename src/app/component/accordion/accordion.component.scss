@@ -1,0 +1,60 @@
+h2 {
+    cursor: pointer;
+    position: relative;
+    font-size: 1em;
+    font-family: Verdana;
+    border-bottom: 1px solid #d2d2d2;
+    margin: 0;
+    padding-right: 2em;
+    /* Define the style rules for the 'arrow icons' */
+    span {
+        font-size: 0.95em;
+        position: absolute;
+        top: 50%;
+        right: 4%;
+        transform: translate(-4%, -50%);
+    }
+}
+
+
+/* Here we define the actual 'menu' and its 'options' */
+
+.image-wrapper {
+    margin: 0 auto 2em auto;
+    width: 20%;
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+
+div {
+    position: relative;
+    padding: 1em;
+    background: rgba(230, 230, 230, 1);
+    border-bottom: 1px solid rgba(210, 210, 210, 1);
+    ion-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    div {
+        padding: 0;
+        border: 0;
+
+        
+    }
+}
+
+
+/* Following classes display/hide the 'menu'
+ // based on the state change detection in the
+ // component class */
+
+.active {
+    display: block
+}
+
+.inactive {
+    display: none;
+}

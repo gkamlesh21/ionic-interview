@@ -1,0 +1,8 @@
+<h2 (click)="toggleAccordion()" class="ion-padding">
+    <strong>{{number}}.</strong>&nbsp;&nbsp;{{ name }}
+    <span *ngIf="isMenuOpen">&#9650;</span>
+    <span *ngIf="!isMenuOpen">&#9660;</span>
+</h2>
+<div [ngClass]="this.isMenuOpen ? 'active' : 'inactive'">
+    <div innerHTML="{{description}}"></div>
+</div>
