@@ -555,6 +555,70 @@
         "icon": "logo-javascript",
         "question": [
             {
+                "name": "Output - every() true/false?",
+                "description": "<br><img src='./assets/jsCode/every.png'>"
+            },
+            {
+                "name": "Output - var result NaN",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/resultnan.png'><br><br><strong>Answer: </strong> The result is <strong>NaN</strong> because the var result  variable is immediately initialized, by setting it to undefined, Inside the loop since the result in uninitialized so the value of the variable result remains undefined. as we know, undefined isn’t converted into any number, so using it in maths calculations returns NaN. i.e., <strong>undefined + 5 = NaN</strong></p>"
+            },
+            {
+                "name": "Output - eval method",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/eval.png'><br><br><strong>Answer: </strong> The result is <strong>B) 105</strong> because The eval function we see here can be used to calculate the Javascript in the form of string also as the as multiplication operator has greater priority than addition operator so it will first execute 10 x 10 is equal to 100 and then it at 5 to it so it becomes <strong>Number 105</strong></p>"
+            },
+            {
+                "name": "Output - string and array when updated",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/printstringhello.png'><br><br><strong>Answer: </strong> The result is <strong>\"𝗛𝗲𝗹𝗹𝗼\" ['𝗛', '𝗮', '𝗹', '𝗹', '𝗼']</strong> because string is immutable. so this will log original str i.e., \"𝗛𝗲𝗹𝗹𝗼\", and array is mutable so this will log updated value ['𝗛', '𝗮', '𝗹', '𝗹', '𝗼']</p>"
+            },
+            {
+                "name": "Output - union of arrays",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/arrayconcat.png'><br><br><strong>Answer: </strong> The result is <strong>[1, 2, 3, 4]</strong> because here the logic is in this way <br><strong>#1.</strong> First get the elements that are contained in first array using <strong>filter method</strong> and not contained in the second array using <strong>includes method</strong>, <br><strong>#2.</strong> concat the result with the element of the second array using <strong>concat method</strong></p>"
+            },
+            {
+                "name": "Output - unique object using Map",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/arraymap.png'><br><br><strong>Answer: </strong> The result is <strong>[{ 𝗸𝗲𝘆: 𝟭 }, { 𝗸𝗲𝘆: 𝟮 }]</strong> because the element exists in map object then skip to the next element, if not, add it to the result array.</p>"
+            },
+            {
+                "name": "Output - Sum using Currying",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/currying.png'><br><br><strong>Answer:</strong> The result is <strong>5 5</strong> because Currying is a function that takes one argument at a time and returns a new function expecting the next argument</p>"
+            },
+            {
+                "name": "Output - Object Key using square bracket operator",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/objectkey.png'><br><br><strong>Answer:</strong> The result is <strong>Jayesh 24</strong> because value of the key can be any expression as long as it is wrapped in brackets []. The result of an expression enclosed in brackets becomes the property name. i.e., age</p>"
+            },
+            {
+                "name": "Ouput - replace string expression",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/replace.png'><br><br><strong>Answer:</strong> The result is <strong>jx@gmail.com logged-in</strong> replace() method is used to replace a part of a given string with a new substring</p>"
+            },
+            {
+                "name": "output - using default value and function expression",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/defaultpara.png'><br><br><strong>Answer:</strong> The result is <strong>3 6</strong> Default values allow the named parameters to get initialized with a default value or when no value is passed. Now using a value in first parameter will overwrite it and while using function add as default value expression the value becomes 3+3 = 6</p>"
+            },
+            {
+                "name": "Output - array using reverse and then push new item",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/arrayrev.png'><br><br><strong>Answer:</strong> The result is <strong>[3,2,1,4] [3,2,1,4]</strong> <br> <strong>#1.</strong> The reverse() method reverses the array immediately; this means that the original elements of the array are swapped, and the original sequence is lost. <strong> #2.</strong> since reverse and push both method mutates the original array.so arr2.push will also modify the arr1. <br><strong>#3.</strong> after push operation this will log [3,2,1,4] because they’re both referencing the same array</p>"
+            },
+            {
+                "name": "Output - using Object.is check for number, string and objects.",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/objectis.png'><br><br><strong>Answer:</strong> The result is <strong>false false</strong> <br> <strong>#1.</strong> TheObject.is() workons on strict comparison operator .i.e - === <strong> #2.</strong> return false since for strict equality number and string comparison will return false. <br><strong>#3.</strong> The specified objects look the same; however, they are two different objects as they refer to different memory addresses. This is why the Object.is() method marked these objects as unequal after comparing their references and return false.</p>"
+            },
+            {
+                "name": "Output - find a character with maximum occurrence in a string",
+                "description": "<br><img src='./assets/jsCode/maxstringoccurence.png'><br><br>"
+            },
+            {
+                "name": "Output -  compare string using sort method",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/stringsort.png'><br><br><strong>Answer:</strong> The result is <strong>true</strong> <br> since both str1 and str2 will be 'ehllo' after sorting and join. so this will return true</p>"
+            },
+            {
+                "name": "Output - trim",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/trim.png'><br><br><strong>Answer:</strong> The result is <strong>\"&nbsp;&nbsp;Jayesh&nbsp;&nbsp;\" \"Jayesh\"</strong> <br> string.trim() removes sequences of whitespaces and line terminators from both the start and the end of the string. It doesn't change the original string but returns a new string without leading and trailing white spaces.</p>"
+            },
+            {
+                "name": "Output  - Array with single nad multiple arguments",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/emptyarray.png'><br><br><strong>Answer:</strong> The result is <strong>[empty x 3][1,2,3]</strong> <br> <strong>#1.</strong>  arr1 = new Array(3); will create array arr1 with a specified number of empty slots (e.g. Array(3) creates the array [empty x 3]). so this will log [𝗲𝗺𝗽𝘁𝘆 × 𝟯] <br><strong>#2.</strong>new Array(1, 2, 3); //an array with three elements</p>"
+            },
+            {
                 "name": "Output - What is the result of X, Y, Z / A, B C object?",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/xyzObjectProblem.png'><br><br><strong>Solution - </strong><br><img src='./assets/jsCode/xyzObject.png'><br><br>Adding objects as properties of another object should be done carefully.<br><br>Writing x[y]={name:”Vivek”}, is same as writing x[‘object Object’]={name:”Vivek”},<br><br>While setting a property of an object, javascript coerces the parameter into a string.<br><br>Therefore, since y is an object, it will be converted to ‘object Object’.<br><br>Both x[y] and x[z] are referencing the same property.</p>"
             },
@@ -631,6 +695,10 @@
                 "description": "<p><img src='./assets/jsCode/missingNumber.png'></p>"
             },
             {
+                "name": "Output - Find the duplicate values in an string",
+                "description": "<ul><li><strong>Using filter + indexOf</strong> <img src='./assets/jsCode/duplicateValue4.png'></li></ul>"
+            },
+            {
                 "name": "Output - Find the duplicate values in an array",
                 "description": "<ul> <li><strong>By simply Traversing the Array</strong> <br><img src='./assets/jsCode/duplicateValue.png'></li><li><strong>Using filter + indexOf</strong> <br><img src='./assets/jsCode/duplicateValue1.png'></li><li><strong>Using includes</strong> <br><img src='./assets/jsCode/duplicateValue2.png'></li><li><strong>Using ES6 \"Set\"</strong> <br><img src='./assets/jsCode/duplicateValue3.png'></li></ul>"
             },
@@ -640,7 +708,7 @@
             },
             {
                 "name": "Output - Reverse each word in the sentence",
-                "description": "<p><img src='./assets/jsCode/reverse2.png'><br><br><img src='./assets/jsCode/reverse.png'><br><br><img src='./assets/jsCode/reverse1.png'><br><br>Reversing word greater than 5 letters <br><img src='./assets/jsCode/reverse3.png'><br><br><img src='./assets/jsCode/reverseString.png'><br><br>Here, <strong>The <code>split()</code> method splits a string into an array of substrings, and returns the new array. If an empty string (\"\") is used as the separator, the string is split between each character, where as the <code>reverse()</code> method reverses the order of the elements in an array, and the <code>join()</code> method returns an array as a string.</strong></p>"
+                "description": "<p><img src='./assets/jsCode/reverse2.png'><br><br><img src='./assets/jsCode/reverse.png'><br><br><img src='./assets/jsCode/reverse1.png'><br><br><strong>Reversing word greater than 5 letters</strong><br><img src='./assets/jsCode/reverse3.png'><br><br><img src='./assets/jsCode/reverseString.png'><br><br>Here, <strong>The <code>split()</code> method splits a string into an array of substrings, and returns the new array. If an empty string (\"\") is used as the separator, the string is split between each character, where as the <code>reverse()</code> method reverses the order of the elements in an array, and the <code>join()</code> method returns an array as a string.</strong></p>"
             },
             {
                 "name": "Output - setTimeout Inside For Loop",
@@ -780,7 +848,7 @@
             },
             {
                 "name": "Output - Testing knowledge on \"this\"",
-                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/this.png'></p><br><p><strong>Answer</strong> - <strong><code><br>10<br>2</code></strong>  When setting an object property, JavaScript will implicitly <strong>stringify</strong><br><br>In the first place, as <code>fn</code> is passed as a parameter to the function <code>method</code>, the scope (<code>this</code>) of the function <code>fn</code> is <code>window</code>.  <code>var length = 10;</code> is declared at the <code>window</code> level. It also can be accessed as <code>window.length</code> or <code>length</code> or <code>this.length</code> (when <code>this === window</code>.)<br><br>Now, we know that we can access any number of arguments in a JavaScript function using the <code>arguments[]</code> array.<br><br>Hence <code>arguments[0]()</code> is nothing but calling <code>fn()</code>. Inside <code>fn</code> now, the scope of this function becomes the <code>arguments</code> array, and logging the length of <code>arguments[]</code> will return <code>2</code>.</p>"
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/this.png'></p><br><p><strong>Answer</strong> - <strong><code><br>10<br>2</code></strong><br><br>When setting an object property, JavaScript will implicitly <strong>stringify</strong><br><br>In the first place, as <code>fn</code> is passed as a parameter to the function <code>method</code>, the scope (<code>this</code>) of the function <code>fn</code> is <code>window</code>.  <code>var length = 10;</code> is declared at the <code>window</code> level. It also can be accessed as <code>window.length</code> or <code>length</code> or <code>this.length</code> (when <code>this === window</code>.)<br><br>Now, we know that we can access any number of arguments in a JavaScript function using the <code>arguments[]</code> array.<br><br>Hence <code>arguments[0]()</code> is nothing but calling <code>fn()</code>. Inside <code>fn</code> now, the scope of this function becomes the <code>arguments</code> array, and logging the length of <code>arguments[]</code> will return <code>2</code>.</p>"
             },
             {
                 "name": "Output - try catch",
@@ -803,7 +871,7 @@
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/closure1.png'></p><br><p><strong>Answer</strong> - <br><strong><code>global/window object<br>object \"b\"<br>global/window object</code></strong><br><br><br>Since we are using the arrow function inside <strong>func2, this </strong>keyword refers to the global object.<br><br><strong>Code 3 </strong>- Outputs in the following order:</p>"
             },
             {
-                "name": "Output - thin in IIFE",
+                "name": "Output - this in IIFE",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/this1.png'></p><br><p><strong>Answer</strong> - <br><strong><code>\"Vivek\"<br>blank_value/undefined<br>\"Vivek\"</code></strong> - Only in the IIFE inside the function <strong>f</strong>, <strong>this </strong>keyword refers to the global/window object.</p>"
             },
             {
