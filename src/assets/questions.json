@@ -555,6 +555,78 @@
         "icon": "logo-javascript",
         "question": [
             {
+                "name": "Output - every() true/false?",
+                "description": "<br><img src='./assets/jsCode/every.png'>"
+            },
+            {
+                "name": "Output - var result NaN",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/resultnan.png'><br><br><strong>Answer: </strong> The result is <strong>NaN</strong> because the var result  variable is immediately initialized, by setting it to undefined, Inside the loop since the result in uninitialized so the value of the variable result remains undefined. as we know, undefined isn’t converted into any number, so using it in maths calculations returns NaN. i.e., <strong>undefined + 5 = NaN</strong></p>"
+            },
+            {
+                "name": "Output - eval method",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/eval.png'><br><br><strong>Answer: </strong> The result is <strong>B) 105</strong> because The eval function we see here can be used to calculate the Javascript in the form of string also as the as multiplication operator has greater priority than addition operator so it will first execute 10 x 10 is equal to 100 and then it at 5 to it so it becomes <strong>Number 105</strong></p>"
+            },
+            {
+                "name": "Output - string and array when updated",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/printstringhello.png'><br><br><strong>Answer: </strong> The result is <strong>\"𝗛𝗲𝗹𝗹𝗼\" ['𝗛', '𝗮', '𝗹', '𝗹', '𝗼']</strong> because string is immutable. so this will log original str i.e., \"𝗛𝗲𝗹𝗹𝗼\", and array is mutable so this will log updated value ['𝗛', '𝗮', '𝗹', '𝗹', '𝗼']</p>"
+            },
+            {
+                "name": "Output - union of arrays / merge with unique value",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/arrayconcat.png'><br><br><strong>Answer: </strong> The result is <strong>[1, 2, 3, 4]</strong> because here the logic is in this way <br><strong>#1.</strong> First get the elements that are contained in first array using <strong>filter method</strong> and not contained in the second array using <strong>includes method</strong>, <br><strong>#2.</strong> concat the result with the element of the second array using <strong>concat method</strong></p>"
+            },
+            {
+                "name": "Output - unique object using Map",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/arraymap.png'><br><br><strong>Answer: </strong> The result is <strong>[{ 𝗸𝗲𝘆: 𝟭 }, { 𝗸𝗲𝘆: 𝟮 }]</strong> because the element exists in map object then skip to the next element, if not, add it to the result array.</p>"
+            },
+            {
+                "name": "Output - Sum using Currying",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/currying.png'><br><br><strong>Answer:</strong> The result is <strong>5 5</strong> because Currying is a function that takes one argument at a time and returns a new function expecting the next argument</p>"
+            },
+            {
+                "name": "Output - Closures, Currying, and Higher-Order Functions with returning multiple values from the function",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/problem7.png'><br><br><strong>Answer: </strong> The result is <strong>6 10</strong> because <br><strong>#1.</strong> In the first statement  we get back the array [𝟲, function(z) { return 2 * 3 + z; }]. so calling mul(2)(3)[0] evaluates to the first element of the array returned by the inner function, which is the product of 2 and 3, i.e., <strong>6</strong>. <br><strong>#2.</strong> //returning index 1, which returns the function that takes z as a parameter. i.e., calls the second closure in the array with an argument of 4, and once z is passed to the function it returns 2*3 + 4 = <strong>10</strong>.</p>"
+            },
+            {
+                "name": "Output - Object Key using square bracket operator",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/objectkey.png'><br><br><strong>Answer:</strong> The result is <strong>Jayesh 24</strong> because value of the key can be any expression as long as it is wrapped in brackets []. The result of an expression enclosed in brackets becomes the property name. i.e., age</p>"
+            },
+            {
+                "name": "Ouput - replace string expression",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/replace.png'><br><br><strong>Answer:</strong> The result is <strong>jx@gmail.com logged-in</strong> replace() method is used to replace a part of a given string with a new substring</p>"
+            },
+            {
+                "name": "output - using default value and function expression",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/defaultpara.png'><br><br><strong>Answer:</strong> The result is <strong>3 6</strong> Default values allow the named parameters to get initialized with a default value or when no value is passed. Now using a value in first parameter will overwrite it and while using function add as default value expression the value becomes 3+3 = 6</p>"
+            },
+            {
+                "name": "Output - array using reverse and then push new item",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/arrayrev.png'><br><br><strong>Answer:</strong> The result is <strong>[3,2,1,4] [3,2,1,4]</strong> <br> <strong>#1.</strong> The reverse() method reverses the array immediately; this means that the original elements of the array are swapped, and the original sequence is lost. <strong> #2.</strong> since reverse and push both method mutates the original array.so arr2.push will also modify the arr1. <br><strong>#3.</strong> after push operation this will log [3,2,1,4] because they’re both referencing the same array</p>"
+            },
+            {
+                "name": "Output - using Object.is check for number, string and objects.",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/objectis.png'><br><br><strong>Answer:</strong> The result is <strong>false false</strong> <br> <strong>#1.</strong> TheObject.is() workons on strict comparison operator .i.e - === <br><strong> #2.</strong> return false since for strict equality number and string comparison will return false. <br><strong>#3.</strong> The specified objects look the same; however, they are two different objects as they refer to different memory addresses. This is why the Object.is() method marked these objects as unequal after comparing their references and return false.</p>"
+            },
+            {
+                "name": "Output - compare string using sort method",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/stringsort.png'><br><br><strong>Answer:</strong> The result is <strong>true</strong> <br> since both str1 and str2 will be 'ehllo' after sorting and join. so this will return true</p>"
+            },
+            {
+                "name": "Output - trim",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/trim.png'><br><br><strong>Answer:</strong> The result is <strong>\"&nbsp;&nbsp;Jayesh&nbsp;&nbsp;\" \"Jayesh\"</strong> <br> string.trim() removes sequences of whitespaces and line terminators from both the start and the end of the string. It doesn't change the original string but returns a new string without leading and trailing white spaces.</p>"
+            },
+            {
+                "name": "Output  - Array with single and multiple arguments",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/emptyarray.png'><br><br><strong>Answer:</strong> The result is <strong>[empty x 3][1,2,3]</strong> <br> <strong>#1.</strong>  arr1 = new Array(3); will create array arr1 with a specified number of empty slots (e.g. Array(3) creates the array [empty x 3]). so this will log [𝗲𝗺𝗽𝘁𝘆 × 𝟯] <br><strong>#2.</strong>new Array(1, 2, 3); //an array with three elements</p>"
+            },
+            {
+                "name": "Output - console.log(foo(), typeof x, typeof y);",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/scopelocalglobal.png'><br><br><strong>Answer: </strong> The result is <strong>1, undefined and number</strong> because <br><strong>#1.</strong> Of course the return value of <code>foo()</code> is 1 due to the increment operator. But the statement <code>let x = y = 0</code> declares a local variable x. Whereas y declared as a global variable accidentally. <br><strong>#2.</strong> Since the block scoped variable x is undefined outside of the function, the type will be undefined too. Whereas the global variable <code>y</code> is available outside the function, the value is 0 and type is number.</p>"
+            },
+            {
+                "name": "",
+                "description": ""
+            },
+            {
                 "name": "Output - What is the result of X, Y, Z / A, B C object?",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/xyzObjectProblem.png'><br><br><strong>Solution - </strong><br><img src='./assets/jsCode/xyzObject.png'><br><br>Adding objects as properties of another object should be done carefully.<br><br>Writing x[y]={name:”Vivek”}, is same as writing x[‘object Object’]={name:”Vivek”},<br><br>While setting a property of an object, javascript coerces the parameter into a string.<br><br>Therefore, since y is an object, it will be converted to ‘object Object’.<br><br>Both x[y] and x[z] are referencing the same property.</p>"
             },
@@ -575,34 +647,6 @@
                 "description": "<p><strong>Problem</strong><br><strong>const array=[1,2,15,4,30,7,45];<br>console.log(array.sort());</strong><br><br>The sort() method is used to sort the elements of an array. But the output of the above is not what expected out of sort() function.<br><br>This is because the default sort is according to tring Unicode points. The fix to it is by adding an anonymous function and tell to sort according to ascending or descending order. <br><br><img src='./assets/jsCode/sort.png'><br><br><strong>Sorting Programatically</strong><br><img src='./assets/jsCode/sortprogram.png'></p>"
             },
             {
-                "name": "Output - Recursion example Flatten array",
-                "description": "<p><strong>Algorithm steps:</strong></p><ul><li>First, we iterate through the given array.</li><li>Then check each element:<ul><li>if it is not an array then push the elements in an updated array.</li><li>if it is an array then again call the same function <code>flatten()</code> i.e. recursion. Then we will combine our updated array and return values of <code>flatten()</code> using the spread operator in ES6. This will keep flatting the updated array.</li></ul></li></ul><p><strong>Solution 1</strong><br><img src='./assets/jsCode/flattenforloop.png'><br><br><strong>Solution 2</strong><br><img src='./assets/jsCode/flatten.png'></p>"
-            },
-            {
-                "name": "Output - Recursion example 'display countdown numbers'",
-                "description": "<p><strong>Algorithm steps:</strong></p><ul><li>First, we iterate through the given number.</li><li>Then we decrease the number by 1 and store that value in a variable</li><li>Then we evaluate the new stored value against the condition greater than 0, if it is then we again trigger the countdown function.</li></ul><p><img src='./assets/jsCode/recursioncountdown.png'></p>"
-            },
-            {
-                "name": "Output - Find Factorial",
-                "description": "<p>The factorial function says to multiply all the whole numbers from the chosen number down to one. In more mathematical terms, the factorial of a number <strong>(n!) is equal to n(n-1)</strong>.<br><br><img src='./assets/jsCode/factorial.png'></p>"
-            },
-            {
-                "name": "Output - Find out prime factors of the number",
-                "description": "<p><strong>Solution 1</strong><br><img src='./assets/jsCode/factors1.png'><br><br><strong>Solution 2</strong><br><img src='./assets/jsCode/factors.png'></p>"
-            },
-            {
-                "name": "Output - Perfect number using Javascript",
-                "description": "<p>In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself<br><i>Example</i> : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors: ( 1 + 2 + 3 + 6 ) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14.<br><br><img src='./assets/jsCode/perfectnumber.png'></p>"
-            },
-            {
-                "name": "Output - digits from a string with numbers",
-                "description": "<p><strong>var strNum = \"only123!\"; </strong><br><br>To fetch the digits from the above string, the following RegExp is used: <img src='./assets/jsCode/regexp.png'><br><br><img src='./assets/jsCode/findnumber.png'></p>"
-            },
-            {
-                "name": "Output - non-digit characters from a string",
-                "description": "<p><strong>var strNum = \"DEMO989#@#@\";</strong><br><br>The following RegExp is used to get a non-digits:&nbsp;<img src='./assets/jsCode/regexp1.png'><br><br><img src='./assets/jsCode/findalphabets.png'></p>"
-            },
-            {
                 "name": "Output - How to shuffle an array in JavaScript?",
                 "description": " <ul> <li><img src='./assets/jsCode/shuffle.png'></li><li><strong>[3,5,1,95,8,23].sort( ()=>Math.random()-0.5)</strong></li><li><img src='./assets/jsCode/shuffle1.png'></li></ul>"
             },
@@ -619,7 +663,7 @@
                 "description": "<p><img src='./assets/jsCode/problem2.png'><br><br><strong>Problem</strong>What is the issue with the code and how can it be fixed?<br><br>The output logged will be:</p><strong><code>undefined<br>Johnny Deep</code></strong><p>The first console.log prints <strong>undefined</strong> because heroIdentity()is been invoked in the global context (i.e., the window object) where the <strong>_name</strong> property doesn’t exists.<br><br>The other way to fix it is by binding, it to hero object by using bind.</p><strong><code>var heroIdentity = hero.getIdentity.bind(hero);</code></strong>"
             },
             {
-                "name": "Output - What is the output of the below code and why? (method)",
+                "name": "Output - What is the output of the below code and why? (arguments / method)",
                 "description": "<p><img src='./assets/jsCode/method.png'><br><br>The output logged will be:</p><strong><code>10<br>2</code></strong><p>When inside the method, fn() is called the “this” of the function fn is at window level. So, “this.length” will produce <strong>10</strong>.<br>Now, when <code>arguments[0]()&nbsp;</code>is called, then <code>arguments[0]()&nbsp;</code> is equivalent to “fn” and function fn is called. But “this” now is the arguments array, which is of length 2 because it contains two arguments (fn, 1). So, “this.length” will produce <strong>2</strong>.</p>"
             },
             {
@@ -631,6 +675,10 @@
                 "description": "<p><img src='./assets/jsCode/missingNumber.png'></p>"
             },
             {
+                "name": "Output - Find the duplicate values in an string / find a character with maximum occurrence in a string",
+                "description": "<ul><li><strong>Using filter + indexOf</strong><br><img src='./assets/jsCode/duplicateValue4.png'></li><li><strong>Using classical for loop</strong><br><img src='./assets/jsCode/duplicateValue5.png'></li></ul>"
+            },
+            {
                 "name": "Output - Find the duplicate values in an array",
                 "description": "<ul> <li><strong>By simply Traversing the Array</strong> <br><img src='./assets/jsCode/duplicateValue.png'></li><li><strong>Using filter + indexOf</strong> <br><img src='./assets/jsCode/duplicateValue1.png'></li><li><strong>Using includes</strong> <br><img src='./assets/jsCode/duplicateValue2.png'></li><li><strong>Using ES6 \"Set\"</strong> <br><img src='./assets/jsCode/duplicateValue3.png'></li></ul>"
             },
@@ -640,7 +688,7 @@
             },
             {
                 "name": "Output - Reverse each word in the sentence",
-                "description": "<p><img src='./assets/jsCode/reverse2.png'><br><br><img src='./assets/jsCode/reverse.png'><br><br><img src='./assets/jsCode/reverse1.png'><br><br>Reversing word greater than 5 letters <br><img src='./assets/jsCode/reverse3.png'><br><br><img src='./assets/jsCode/reverseString.png'><br><br>Here, <strong>The <code>split()</code> method splits a string into an array of substrings, and returns the new array. If an empty string (\"\") is used as the separator, the string is split between each character, where as the <code>reverse()</code> method reverses the order of the elements in an array, and the <code>join()</code> method returns an array as a string.</strong></p>"
+                "description": "<p><img src='./assets/jsCode/reverse2.png'><br><br><img src='./assets/jsCode/reverse.png'><br><br><img src='./assets/jsCode/reverse1.png'><br><br><strong>Reversing word greater than 5 letters</strong><br><img src='./assets/jsCode/reverse3.png'><br><br><img src='./assets/jsCode/reverseString.png'><br><br>Here, <strong>The <code>split()</code> method splits a string into an array of substrings, and returns the new array. If an empty string (\"\") is used as the separator, the string is split between each character, where as the <code>reverse()</code> method reverses the order of the elements in an array, and the <code>join()</code> method returns an array as a string.</strong></p>"
             },
             {
                 "name": "Output - setTimeout Inside For Loop",
@@ -723,8 +771,8 @@
                 "description": "<p><strong>Problem</strong> - For example: Mary is an anagram of Army</p><br><p><strong>Answer</strong> - <br><img src='./assets/jsCode/anagram.png'></p>"
             },
             {
-                "name": "Output - typeof F()",
-                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/typeoff.png'></p><br><p><strong>Answer</strong> - The output would be 1undefined. The if condition statement evaluates using eval, so eval(function f(){}) returns function f(){} (which is true). Therefore, inside the if statement, executing typeof f returns undefined because the if statement code executes at run time, and the statement inside the if condition is evaluated during run time.</p>"
+                "name": "Output - typeof f()",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/typeoff.png'></p><br><p><strong>Answer</strong> - You can see function expression instead function declaration inside if statement. So it always returns true. Since it is not declared(or assigned) anywhere, f is undefined and typeof f is undefined too.</p>"
             },
             {
                 "name": "Output - delete operator",
@@ -733,6 +781,18 @@
             {
                 "name": "Output - delete operator with x object - foo bar",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/delete.png'></p><br><p><strong>Answer</strong> - The output would be undefined. The delete operator is used to delete the property of an object. Here, x is an object which has the property foo, and as it is a self-invoking function, we will delete the foo property from object x. After doing so, when we try to reference a deleted property foo, the result is undefined.</p>"
+            },
+            {
+                "name": "Output - delete operator deleting an array index",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/delete4.png'><br><br><strong>Answer: </strong> The result is <strong>[undefined/empty, 'b', 'c', 'd'], undefined, 4</strong> because The <code>delete</code> operator will delete the object property but it will not reindex the array or change its length. So the number or elements or length of the array won't be changed. If you try to print myChars then you can observe that it doesn't set an undefined value, rather the property is removed from the array.</p>"
+            },
+            {
+                "name": "Output - return value of Duplicate paramater to function",
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/duplicate3.png'><br><br><strong>Answer: </strong> The result is <strong>3, 2, 3</strong> because In non-strict mode, the regular JavaScript functions allow duplicate named parameters. The above code snippet has duplicate parameters on 1st and 3rd parameters. The value of the first parameter is mapped to the third argument which is passed to the function. Hence, the 3rd argument overrides the first parameter. In strict mode, duplicate parameters will throw a Syntax Error. <br><br><br><strong>Problem</strong><br><img src='./assets/jsCode/duplicate4.png'><br><br><strong>Answer: </strong> The result is <strong>SyntaxError: Duplicate parameter name not allowed in this context</strong> because Unlike regular functions, the arrow functions doesn't not allow duplicate parameters in either strict or non-strict mode. So you can see <code>SyntaxError</code> in the console.</p>"
+            },
+            {
+                "name": "Output - What is the output of the below code and why? compare",
+                "description": "<p><strong>Problem</strong><br><pre>console.log(10 == [10], 10 == [[[[[[[10]]]]]]]);</pre><br><br><strong>Answer: </strong> The result is <strong>True, True</strong> because As per the comparison algorithm in the ECMAScript specification(ECMA-262), the above expression converted into JS as below <br><pre>10 === Number([10].valueOf().toString()); // 10</pre><br>So it doesn't matter about number brackets([]) around the number, it is always converted to a number in the expression.</p>"
             },
             {
                 "name": "Output - named function expression - foo bar typeof",
@@ -780,7 +840,7 @@
             },
             {
                 "name": "Output - Testing knowledge on \"this\"",
-                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/this.png'></p><br><p><strong>Answer</strong> - <strong><code><br>10<br>2</code></strong>  When setting an object property, JavaScript will implicitly <strong>stringify</strong><br><br>In the first place, as <code>fn</code> is passed as a parameter to the function <code>method</code>, the scope (<code>this</code>) of the function <code>fn</code> is <code>window</code>.  <code>var length = 10;</code> is declared at the <code>window</code> level. It also can be accessed as <code>window.length</code> or <code>length</code> or <code>this.length</code> (when <code>this === window</code>.)<br><br>Now, we know that we can access any number of arguments in a JavaScript function using the <code>arguments[]</code> array.<br><br>Hence <code>arguments[0]()</code> is nothing but calling <code>fn()</code>. Inside <code>fn</code> now, the scope of this function becomes the <code>arguments</code> array, and logging the length of <code>arguments[]</code> will return <code>2</code>.</p>"
+                "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/this.png'></p><br><p><strong>Answer</strong> - <strong><code><br>10<br>2</code></strong><br><br>When setting an object property, JavaScript will implicitly <strong>stringify</strong><br><br>In the first place, as <code>fn</code> is passed as a parameter to the function <code>method</code>, the scope (<code>this</code>) of the function <code>fn</code> is <code>window</code>.  <code>var length = 10;</code> is declared at the <code>window</code> level. It also can be accessed as <code>window.length</code> or <code>length</code> or <code>this.length</code> (when <code>this === window</code>.)<br><br>Now, we know that we can access any number of arguments in a JavaScript function using the <code>arguments[]</code> array.<br><br>Hence <code>arguments[0]()</code> is nothing but calling <code>fn()</code>. Inside <code>fn</code> now, the scope of this function becomes the <code>arguments</code> array, and logging the length of <code>arguments[]</code> will return <code>2</code>.</p>"
             },
             {
                 "name": "Output - try catch",
@@ -803,7 +863,7 @@
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/closure1.png'></p><br><p><strong>Answer</strong> - <br><strong><code>global/window object<br>object \"b\"<br>global/window object</code></strong><br><br><br>Since we are using the arrow function inside <strong>func2, this </strong>keyword refers to the global object.<br><br><strong>Code 3 </strong>- Outputs in the following order:</p>"
             },
             {
-                "name": "Output - thin in IIFE",
+                "name": "Output - this in IIFE",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/this1.png'></p><br><p><strong>Answer</strong> - <br><strong><code>\"Vivek\"<br>blank_value/undefined<br>\"Vivek\"</code></strong> - Only in the IIFE inside the function <strong>f</strong>, <strong>this </strong>keyword refers to the global/window object.</p>"
             },
             {
@@ -816,11 +876,39 @@
             },
             {
                 "name": "True False Rapid Fire",
-                "description": "<p><strong>Question: </strong>Is<code>'false'</code>is!1?<br><strong>Answer: </strong>No.Because,it's a string with length greater than 0. Only empty string is false.<br><br><strong>Question: </strong> Is <code>' '</code> is false?<br><strong>Answer: </strong> No. Because, it's not an empty string.There is a white space in it.<br><br><strong>Question: </strong>What about<code>{}</code>?<br><strong>Answer: </strong>!0.It's an object. An object without any property is an object can't be falsy.<br><br><strong>Question: </strong>Tell me about<code>[]</code>?<br><strong>Answer: </strong>This is also truthy.It's an array object (array is child of object) is truthy.<br><br><strong>Question: </strong>You talked bout <code>''</code> to be falsy. What about <code>new String('')</code>?<br><strong>Answer: </strong> Though you are passing empty string to the string constructor, it is creating an String object. More precisely a instance of String object. It becomes an object. Hence, it is not false. so, it is truthy.<br><br><strong>Question: </strong> Tell me about <code>new Boolean(false)</code><br><strong>Answer: </strong> truthy. As it creates an instance of the Boolean object which is an object. Object is truthy.<br><br><strong>Question: </strong> <code>Boolean(function(){})</code><br><strong>Answer: </strong> <code>true</code> if you pass a truthy value to Boolean, it will be true.<br><br><strong>Question: </strong> <code>Boolean(/foo/)</code><br><strong>Answer: </strong> <code>true</code><br><br><strong>Question: </strong> <code>true%1</code><br><strong>Answer: </strong> 0. When you are trying to find reminder of true, true becomes 1 and reminder of 1 while dividing by 1 is 0. you will get same result if you doe <code>false%1</code><br><br><strong>Question: </strong> <code>''%1</code><br><strong>Answer: </strong>0</p>"
+                "description": "<p><strong>Question: </strong>Is<code>'false'</code>is!1?<br><strong>Answer: </strong>No.Because,it's a string with length greater than 0. Only empty string is false.</p><p><strong>Question: </strong> Is <code>' '</code> is false?<br><strong>Answer: </strong> No. Because, it's not an empty string.There is a white space in it.</p><p><strong>Question: </strong>What about<code>{}</code>?<br><strong>Answer: </strong>!0.It's an object. An object without any property is an object can't be falsy.</p><p><strong>Question: </strong>Tell me about<code>[]</code>?<br><strong>Answer: </strong>This is also truthy.It's an array object (array is child of object) is truthy.</p><p><strong>Question: </strong>You talked bout <code>''</code> to be falsy. What about <code>new String('')</code>?<br><strong>Answer: </strong> Though you are passing empty string to the string constructor, it is creating an String object. More precisely a instance of String object. It becomes an object. Hence, it is not false. so, it is truthy.</p><p><strong>Question: </strong> Tell me about <code>new Boolean(false)</code><br><strong>Answer: </strong> truthy. As it creates an instance of the Boolean object which is an object. Object is truthy.</p><p><strong>Question: </strong> <code>Boolean(function(){})</code><br><strong>Answer: </strong> <code>true</code> if you pass a truthy value to Boolean, it will be true.</p><p><strong>Question: </strong> <code>Boolean(/foo/)</code><br><strong>Answer: </strong> <code>true</code></p><p><strong>Question: </strong> <code>true%1</code><br><strong>Answer: </strong> 0. When you are trying to find reminder of true, true becomes 1 and reminder of 1 while dividing by 1 is 0. you will get same result if you doe <code>false%1</code></p><p><strong>Question: </strong> <code>''%1</code><br><strong>Answer: </strong>0</p>"
             },
             {
                 "name": "Rapid Fire",
-                "description": "<p><strong>Question: </strong> What is <code>typeof []</code><br><strong>Answer: </strong> Object. Actually Array is derived from Object. If you want to check array use <code>Array.isArray(arr)</code><br><br><strong>Question: </strong> What is <code>typeof arguments</code><br><strong>Answer: </strong> Object. arguments are array like but not array. it has length, can access by index but can't push pop, etc.<br><br><strong>Question: </strong> What is <code>2+true</code><br><strong>Answer: </strong> 3. The plus operator between a number and a boolean or two boolean will convert boolean to number. Hence, true converts to 1 and you get result of 2+1<br><br><strong>Question: </strong> What is <code>'6'+9</code><br><strong>Answer: </strong> 69. If one of the operands of the plus (+) operator is string it will convert other number or boolean to string and perform a concatenation. For the same reason, <code>'2'+true</code> will return '2true'<br><br><strong>Question: </strong> What is the value of <code>4+3+2+'1'</code><br><strong>Answer: </strong> 91 . The addition starts from the left, 4+3 results 7 and 7+2 is 9. So far, the plus operator is performing addition as both the operands are number. After that 9 + '1' where one of the operands is string and plus operator will perform concatenation.<br><br><strong>Question: </strong> What is the value of <code>'1'+2+4</code><br><strong>Answer: </strong> '124'. For this one '1' + 2 will produce '12' and '12'+4 will generates '124'.<br><br><strong>Question: </strong> What is the value of <code>-'34'+10</code><br><strong>Answer: </strong> -24. minus(-) in front of a string is an unary operator that will convert the string to a number and will make it negative. Hence, -'34' becomes, -34 and then plus (+) will perform simple addition as both the operands are number.<br><br><strong>Question: </strong> What is the value of <code>+'dude'</code><br><strong>Answer: </strong> NaN. The plus (+) operator in front of a string is an unary operator that will try to convert the string to number. Here, JavaScript will fail to convert the 'dude' to a number and will produce NaN.<br><br><strong>Question: </strong> If you have <code>var y=1, x=y=typeof x;</code> What is the value of x?<br><strong>Answer: </strong> 'undefined'<br><br><strong>Question: </strong> for <code>var a=(2, 3, 5);</code> what is the value of a?<br><strong>Answer: </strong> 5. The comma operator evaluates each of its operands (from left to right) and returns the value of the last operand.<br><br><strong>Question: </strong> for <code>var a=(1, 5 - 1) * 2</code> what is the value of a?<br><strong>Answer: </strong> 8<br><br><strong>Question: </strong> What is the value of <code>!'bang'</code><br><strong>Answer: </strong> false. <code>!</code> is NOT. If you put <code>!</code> in front of truthy values, it will return false. Using !! (double bang) is a tricky way to check anything truthy or falsy by avoiding implicit type conversion of==comparison.<br><br><strong>Question: </strong> What is the value of <code>parseFloat('12.3.4')</code><br><strong>Answer: </strong> 12.3<br><br><strong>Question: </strong> What is the value of <code>Math.max([2,3,4,5]);</code><br><strong>Answer: </strong> NaN<br><br><strong>Question: </strong> <code>3 instanceof Number</code><br><strong>Answer: </strong> false<br><br><strong>Question: </strong><code>null==undefined</code><br><strong>Answer: </strong> true<br><br><strong>Question: </strong>What is the value of <code>!!function(){};</code><br><strong>Answer: </strong> true<br><br><strong>Question: </strong> What is the value of <code>typeof bar</code><br><strong>Answer: </strong> 'undefined'<br><br><strong>Question: </strong> What is the value of <code>typeof null</code><br><strong>Answer: </strong> 'object'<br><br><strong>Question: </strong> If <code> var a=2, b=3</code> what would be value of <code>a &amp;&amp; b</code><br><strong>Answer: </strong> 3<br><br><strong>Question: </strong> What would be consoled <code>var foo='outside'; function logIt(){console.log(foo); var foo='inside';}logIt();</code><br><strong>Answer: </strong> undefined<br><br><strong>Question: </strong> What is <code>-5%2</code><br><strong>Answer: </strong>-1. the result of remainder always get the symbol of first operand<br><br><strong>Question: </strong> Why <code>.1+.2 !=.3</code><br><strong>Answer: true - floating point errors in internally representing certain numbers. 0.1 + 0.2 does not nicely come out to 0.3</strong><br><br><strong>Question: <code>42..toString()</code></strong><br><strong>Anwser:</strong> <code>'42'</code><br><br><strong>Question: </strong> <code>4.2..toString</code><br><strong>Anwser:</strong> //SyntaxError: Unexpected token .<br><br><strong>Question: </strong><code>42 . toString()</code><br><strong>Anwser:</strong> <code>'42'</code><br><br><strong>Question: </strong> <code>typeof(NaN)</code><br><strong>Anwser:</strong>'number'<br><br><strong>Question: </strong> <code>2 in [1,2]</code><br><strong>Anwser:</strong> false. Because 'in' returns whether a particular property/index available in the Object. In this case object has index 0 and 1 but don't have 2. Hence you get false.</p>"
+                "description": "<p><strong>Question: </strong> What is <code>typeof []</code><br><strong>Answer: </strong> Object. Actually Array is derived from Object. If you want to check array use <code>Array.isArray(arr)</code></p><p><strong>Question: </strong> What is <code>typeof arguments</code><br><strong>Answer: </strong> Object. arguments are array like but not array. it has length, can access by index but can't push pop, etc.</p><p><strong>Question: </strong> What is <code>2+true</code><br><strong>Answer: </strong> 3. The plus operator between a number and a boolean or two boolean will convert boolean to number. Hence, true converts to 1 and you get result of 2+1</p><p><strong>Question: </strong> What is <code>'6'+9</code><br><strong>Answer: </strong> 69. If one of the operands of the plus (+) operator is string it will convert other number or boolean to string and perform a concatenation. For the same reason, <code>'2'+true</code> will return '2true'</p><p><strong>Question: </strong> What is the value of <code>4+3+2+'1'</code><br><strong>Answer: </strong> 91 . The addition starts from the left, 4+3 results 7 and 7+2 is 9. So far, the plus operator is performing addition as both the operands are number. After that 9 + '1' where one of the operands is string and plus operator will perform concatenation.</p><p><strong>Question: </strong> What is the value of <code>'1'+2+4</code><br><strong>Answer: </strong> '124'. For this one '1' + 2 will produce '12' and '12'+4 will generates '124'.</p><p><strong>Question: </strong> What is the value of <code>-'34'+10</code><br><strong>Answer: </strong> -24. minus(-) in front of a string is an unary operator that will convert the string to a number and will make it negative. Hence, -'34' becomes, -34 and then plus (+) will perform simple addition as both the operands are number.</p><p><strong>Question: </strong> What is the value of <code>+'dude'</code><br><strong>Answer: </strong> NaN. The plus (+) operator in front of a string is an unary operator that will try to convert the string to number. Here, JavaScript will fail to convert the 'dude' to a number and will produce NaN.</p><p><strong>Question: </strong> What is <code>console.log(10 + \"10\", 10 - \"10\");</code><br><strong>Answer:  1010, 0</strong> The concatenation operator(+) is applicable for both number and string types. So if any operand is string type then both operands concatenated as strings. Whereas subtract(-) operator tries to convert the operands as number type.</p><p><strong>Question: </strong> What is <code>let [a, ...b,] = [1, 2, 3, 4, 5]; console.log(a, b);</code><br><strong>Answer:  SyntaxError</strong> When using rest parameters, trailing commas are not allowed and will throw a SyntaxError. If you remove the trailing comma then it displays <strong>1, [2, 3, 4, 5]</strong></p><p><strong>Question: </strong> If you have <code>var y=1, x=y=typeof x;</code> What is the value of x?<br><strong>Answer: </strong> 'undefined'</p><p><strong>Question: </strong> for <code>var a=(2, 3, 5);</code> what is the value of a?<br><strong>Answer: </strong> 5. The comma operator evaluates each of its operands (from left to right) and returns the value of the last operand.</p><p><strong>Question: </strong> for <code>var a=(1, 5 - 1) * 2</code> what is the value of a?<br><strong>Answer: </strong> 8</p><p><strong>Question: </strong> What is the value of <code>!'bang'</code><br><strong>Answer: </strong> false. <code>!</code> is NOT. If you put <code>!</code> in front of truthy values, it will return false. Using !! (double bang) is a tricky way to check anything truthy or falsy by avoiding implicit type conversion of==comparison.</p><p><strong>Question: </strong> What is the value of <code>parseFloat('12.3.4')</code><br><strong>Answer: </strong> 12.3</p><p><strong>Question: </strong> What is the value of <code>Math.max([2,3,4,5]);</code><br><strong>Answer: </strong> NaN</p><p><strong>Question: </strong> <code>3 instanceof Number</code><br><strong>Answer: </strong> false</p><p><strong>Question: </strong><code>null==undefined</code><br><strong>Answer: </strong> true</p><p><strong>Question: </strong>What is the value of <code>!!function(){};</code><br><strong>Answer: </strong> true</p><p><strong>Question: </strong> What is the value of <code>typeof bar</code><br><strong>Answer: </strong> 'undefined'</p><p><strong>Question: </strong> What is the value of <code>typeof null</code><br><strong>Answer: </strong> 'object'</p><p><strong>Question: </strong> If <code> var a=2, b=3</code> what would be value of <code>a &amp;&amp; b</code><br><strong>Answer: </strong> 3</p><p><strong>Question: </strong> What would be consoled <code>var foo='outside'; function logIt(){console.log(foo); var foo='inside';}logIt();</code><br><strong>Answer: </strong> undefined</p><p><strong>Question: </strong> What is <code>-5%2</code><br><strong>Answer: </strong>-1. the result of remainder always get the symbol of first operand</p><p><strong>Question: </strong> Why <code>.1+.2 !=.3</code><br><strong>Answer: true - floating point errors in internally representing certain numbers. 0.1 + 0.2 does not nicely come out to 0.3</strong></p><p><strong>Question: </strong> What is <code>console.log([1, 2] + [3, 4]);</code><br><strong>Answer:  1,23,4</strong> The + operator is not meant or defined for arrays. So it converts arrays into strings and concatenates them.</p><p><strong>Question: <code>42..toString()</code></strong><br><strong>Anwser:</strong> <code>'42'</code></p><p><strong>Question: </strong> <code>4.2..toString</code><br><strong>Anwser:</strong> //SyntaxError: Unexpected token .</p><p><strong>Question: </strong><code>42 . toString()</code><br><strong>Anwser:</strong> <code>'42'</code></p><p><strong>Question: </strong> <code>typeof(NaN)</code><br><strong>Anwser:</strong>'number'</p><p><strong>Question: </strong> <code>2 in [1,2]</code><br><strong>Anwser:</strong> false. Because 'in' returns whether a particular property/index available in the Object. In this case object has index 0 and 1 but don't have 2. Hence you get false.</p>"
+            },
+            {
+                "name": "Output - Recursion example Flatten array",
+                "description": "<p><strong>Algorithm steps:</strong></p><ul><li>First, we iterate through the given array.</li><li>Then check each element:<ul><li>if it is not an array then push the elements in an updated array.</li><li>if it is an array then again call the same function <code>flatten()</code> i.e. recursion. Then we will combine our updated array and return values of <code>flatten()</code> using the spread operator in ES6. This will keep flatting the updated array.</li></ul></li></ul><p><strong>Solution 1</strong><br><img src='./assets/jsCode/flattenforloop.png'><br><br><strong>Solution 2</strong><br><img src='./assets/jsCode/flatten.png'></p>"
+            },
+            {
+                "name": "Output - Recursion example 'display countdown numbers'",
+                "description": "<p><strong>Algorithm steps:</strong></p><ul><li>First, we iterate through the given number.</li><li>Then we decrease the number by 1 and store that value in a variable</li><li>Then we evaluate the new stored value against the condition greater than 0, if it is then we again trigger the countdown function.</li></ul><p><img src='./assets/jsCode/recursioncountdown.png'></p>"
+            },
+            {
+                "name": "Output - Find Factorial",
+                "description": "<p>The factorial function says to multiply all the whole numbers from the chosen number down to one. In more mathematical terms, the factorial of a number <strong>(n!) is equal to n(n-1)</strong>.<br><br><img src='./assets/jsCode/factorial.png'></p>"
+            },
+            {
+                "name": "Output - Find out prime factors of the number",
+                "description": "<p><strong>Solution 1</strong><br><img src='./assets/jsCode/factors1.png'><br><br><strong>Solution 2</strong><br><img src='./assets/jsCode/factors.png'></p>"
+            },
+            {
+                "name": "Output - Perfect number using Javascript",
+                "description": "<p>In number theory, a perfect number is a positive integer that is equal to the sum of its proper positive divisors, that is, the sum of its positive divisors excluding the number itself<br><i>Example</i> : The first perfect number is 6, because 1, 2, and 3 are its proper positive divisors, and 1 + 2 + 3 = 6. Equivalently, the number 6 is equal to half the sum of all its positive divisors: ( 1 + 2 + 3 + 6 ) / 2 = 6. The next perfect number is 28 = 1 + 2 + 4 + 7 + 14.<br><br><img src='./assets/jsCode/perfectnumber.png'></p>"
+            },
+            {
+                "name": "Output - digits from a string with numbers",
+                "description": "<p><strong>var strNum = \"only123!\"; </strong><br><br>To fetch the digits from the above string, the following RegExp is used: <img src='./assets/jsCode/regexp.png'><br><br><img src='./assets/jsCode/findnumber.png'></p>"
+            },
+            {
+                "name": "Output - non-digit characters from a string",
+                "description": "<p><strong>var strNum = \"DEMO989#@#@\";</strong><br><br>The following RegExp is used to get a non-digits:&nbsp;<img src='./assets/jsCode/regexp1.png'><br><br><img src='./assets/jsCode/findalphabets.png'></p>"
             }
         ]
     },
