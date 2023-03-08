@@ -40,12 +40,17 @@ p {
 }
 
 ul, ol{
+    padding-left: 15px;
 	li{
 		padding-bottom: 10px;
 		
 		&:last-of-type{
 			padding-bottom: 0;
 		}
+
+        ul,ol{
+            margin: 15px 0;
+        }
 	}
 }
 
