@@ -709,6 +709,14 @@
                 "description": "<p><img src='./assets/jsCode/missingNumber.png'></p>"
             },
             {
+                "name": "Output - Find the min and max values in the array",
+                "description": "<p><img src='./assets/jsCode/minmax.png'><br><br><img src='./assets/jsCode/minmax1.png'><br><br><img src='./assets/jsCode/minmax2.png'></p>"
+            },
+            {
+                "name": "Output - Capitalize all words in a sentence",
+                "description": "<p><img src='./assets/jsCode/capitalize.png'><br><br><img src='./assets/jsCode/capitalize1.png'><br><br><img src='./assets/jsCode/capitalize2.png'><br><br><img src='./assets/jsCode/capitalize3.png'></p>"
+            },
+            {
                 "name": "Output - Find the duplicate values in an string / find a character with maximum occurrence in a string",
                 "description": "<ul><li><strong>Using filter + indexOf</strong><br><img src='./assets/jsCode/duplicateValue4.png'></li><li><strong>Using classical for loop</strong><br><img src='./assets/jsCode/duplicateValue5.png'></li></ul>"
             },
@@ -718,11 +726,11 @@
             },
             {
                 "name": "Output - Remove duplicates from an array",
-                "description": "<ul> <li><strong>Using empty array / helper array</strong> <br><img src='./assets/jsCode/duplicate.png'></li><li><strong>Using Object</strong> <br><img src='./assets/jsCode/duplicate1.png'></li><li><strong>Using filter + indexOf</strong> <br><img src='./assets/jsCode/duplicate2.png'></li><li><strong>Using ES6 \"Set\"</strong> <br><strong><code>var temp=[...new Set(arr)]</code></strong></li><li><strong>Using ES6 \"Set\" with from()</strong> <br><strong><code>var temp.from(new Set(arr))</code></strong><br><strong>Here, the <code>from()</code> method returns an Array object from any object which has a capability of defining length property or any iterable object.</strong></p></li></ul>"
+                "description": "<ul><li><strong>Using empty array / helper array</strong> <br><img src='./assets/jsCode/duplicate.png'></li><li><strong>Using Object</strong> <br><img src='./assets/jsCode/duplicate1.png'></li><li><strong>Using filter + indexOf</strong> <br><img src='./assets/jsCode/duplicate2.png'></li><li><strong>Using ES6 \"Set\"</strong> <br><pre>var arr=[...new Set(arr)]</pre></li><li><strong>Using ES6 \"Set\" with from()</strong> <br><pre>var temp.from(new Set(arr))</pre><br>Here, the <strong>from()</strong> method returns an Array object from any object which has a capability of defining length property or any iterable object.</li></ul>"
             },
             {
                 "name": "Output - Reverse each word in the sentence",
-                "description": "<p><img src='./assets/jsCode/reverse2.png'><br><br><img src='./assets/jsCode/reverse.png'><br><br><img src='./assets/jsCode/reverse1.png'><br><br><strong>Reversing word greater than 5 letters</strong><br><img src='./assets/jsCode/reverse3.png'><br><br><img src='./assets/jsCode/reverseString.png'><br><br>Here, <strong>The <code>split()</code> method splits a string into an array of substrings, and returns the new array. If an empty string (\"\") is used as the separator, the string is split between each character, where as the <code>reverse()</code> method reverses the order of the elements in an array, and the <code>join()</code> method returns an array as a string.</strong></p>"
+                "description": "<p><img src='./assets/jsCode/reverse4.png'><br><br><img src='./assets/jsCode/reverse5.png'><br><br><img src='./assets/jsCode/reverse6.png'><br><br><img src='./assets/jsCode/reverse2.png'><br><br><img src='./assets/jsCode/reverse.png'><br><br><img src='./assets/jsCode/reverse1.png'><br><br><strong>Reversing word greater than 5 letters</strong><br><img src='./assets/jsCode/reverse3.png'><br><br><img src='./assets/jsCode/reverseString.png'><br><br>Here, <strong>The <code>split()</code> method splits a string into an array of substrings, and returns the new array. If an empty string (\"\") is used as the separator, the string is split between each character, where as the <code>reverse()</code> method reverses the order of the elements in an array, and the <code>join()</code> method returns an array as a string.</strong></p>"
             },
             {
                 "name": "Output - setTimeout Inside For Loop",
@@ -866,7 +874,7 @@
             },
             {
                 "name": "Output - Palindrome",
-                "description": "<p><strong>Answer</strong><br><img src='./assets/jsCode/palindrome.png'><br><br><strong>Example</strong><br><img src='./assets/jsCode/palindrome1.png'></p>"
+                "description": "<p><img src='./assets/jsCode/palindrome.png'><br><br><img src='./assets/jsCode/palindrome1.png'></p>"
             },
             {
                 "name": "Output - object property",
