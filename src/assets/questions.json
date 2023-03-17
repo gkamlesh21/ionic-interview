@@ -961,17 +961,62 @@
         "icon": "logo-react",
         "question": [
             {
-                "name": "How does React work?",
-                "description": "<p>The React framework is an open-source JavaScript framework and library developed by Facebook.<br><br>React's core purpose is to build UI components; it is often referred to as just the “V” (View) in an “MVC” architecture.<br><br>React creates a virtual DOM. When state changes in a component it firstly  identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with the results of diff.</p>"
+                "name": "How does React work behind the scene",
+                "description": "<p>Initally, <strong>Virtual DOM</strong> will be an exact copy of real DOM. In React, whenever a components' state changes, the changes are reflected in <strong>Virtual DOM</strong>. Thus, Virtual DOM has the updated state of the component. <br><br>The process through which React updates the DOM is known as Reconciliation. This reconciliation has 2 phases : <strong>Render Phase, Commit Phase<br>#1.</strong> The <strong>Render phase</strong> takes your JSX and turns it into a javascript representation. This is nothing but the VirtualDOM.<br><strong>#2.</strong> The <strong>Commit Phase</strong> is where React actually touches the DOM and makes changes. <br><br><br><strong>An Important Point:</strong> React does not commit state changes one after the other if there are multiple state changes. Instead, React goes through its virtual DOM, creates a list of those changes that need to be made to the actual DOM and then does it all in one single process. In fancy words, <strong>React does batch updates.</strong></p>" 
             },
             {
-                "name": "What is Context API in ReactJS?",
-                "description": "<p>Context provides a way to pass data through the component tree without having to pass props down manually at every level. Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. Using context, helps us avoid the problem of props drilling.<br><img src='./assets/react/context1.png'></p>"
+                "name": "What is MVC and where does React stand in it?",
+                "description": "<p>MVC or Model-View-Controller is a software design pattern mainly used in Web development for creating complex web-apps. &nbsp;This architecture comes from the traditional flow of web-application:</p><ul><li><strong>View:</strong> Displays visualisation of data to the user. It is mainly the UI which the user interacts with.</li><li><strong>Controller:</strong> It processes server-side logic and is a middleware between View and Model.</li><li><strong>Model:&nbsp;</strong>It mainly processes data from or to the database. It is only connected to the database.</li></ul><p>Now, React is considered as the View layer in the MVC model, as it is mainly used to create the UI.<br>To use Controller and Model logic in React, we use third party libraries like flux and Redux with it.</p>" 
+            },
+            {
+                "name": "Difference between React vs Angular",
+                "description": "<p>Angular is a complete framework, whereas React is a library. React is very lightweight and we generally use other third-party libraries to enhance its capabilities when required. On the other hand, you get everything inside the Angular ecosystem only <br><br>Angular uses two-way data-binding, whereas React uses one-way data-binding. In React the data flows from parent component to child component only. Sometimes this complicates thing and to solve it we use state management packages like Redux and Flux with it. <br><br>Angular comes with complete MVC(Model-View-Controller), whereas React is just the View layer in MVC. In Angular, we write our TypeScript and HTML in different files and it separates the logic. Whereas in React, we use a hybrid language called JSX, which is basically writing JavaScript inside HTML code. <br><br>React is faster than Angular because it updates the Virtual DOM, whereas Angular updates directly the Real DOM. React only updates the part of DOM which gets updated by the code and behind the scene updates the Real DOM, when its efficient, Angular directly updates Real DOM, like a typical vanilla HTML, JS application.<br><br>Angular is a TypeScript-based web application framework, whereas React JS is a JavaScript-based library.<br><br>Angular is used to build single-page applications using HTML and TypeScript. React JS is commonly used to create user interfaces for single-page applications from isolated components.</p>"
             },
             {
                 "name": "What is JSX?",
                 "description": "<p>JavaScript XML, or JSX, <b>is a XML/HTML template syntax used by React</b>. It extends ECMAScript, which allows XML/HTML-like text to coincide with JavaScript and React code. It allows us to put HTML into JavaScript.<br><br>It's faster than normal JavaScript, which makes it easier to create templates, and uses components. It comes with the full power of JavaScript, and you can use it with React to describe what the user interface should look like.</p>"
             },
+            {
+                "name": "",
+                "description": "" 
+            },
+            {
+                "name": "",
+                "description": "" 
+            },
+            {
+                "name": "",
+                "description": "" 
+            },
+            {
+                "name": "",
+                "description": "" 
+            },
+            {
+                "name": "",
+                "description": "" 
+            },
+            {
+                "name": "",
+                "description": "" 
+            },
+            {
+                "name": "",
+                "description": "" 
+            },
+            {
+                "name": "",
+                "description": "" 
+            },
+            
+
+
+            
+            {
+                "name": "What is Context API in ReactJS?",
+                "description": "<p>Context provides a way to pass data through the component tree without having to pass props down manually at every level. Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. Using context, helps us avoid the problem of props drilling.<br><img src='./assets/react/context1.png'></p>"
+            },
+            
             {
                 "name": "What are the advantages of ReactJS?",
                 "description": "<ol><li>Increases the application's performance with Virtual DOM</li><li>JSX makes code is easy to read and write</li><li>It renders both on client and server side</li><li>Easy to integrate with other frameworks (Angular, BackboneJS) since it is only a view library</li><li>Easy to write UI Test cases and integration with tools such as JEST.</li></ol><br><br><p><strong>Disadvantages of ReacJs</strong></p><ol><li><strong>View Part</strong> - ReactJS Covers only the UI Layers of the app and nothing else. So you still need to choose some other technologies to get a complete tooling set for development in the project.</li><li>Due to JSX, a beginner developer complain about its complexity in the learning curve, and the need of additional libraries or tools to complete a full-featured application</li><li><strong>Poor Documentation</strong> - Since React is changing so fast, new tools and patterns are adding up every now and then, and it is becoming difficult for the community to maintain the documentation. This makes it difficult to work with for new developers who want to start with React. </li><li>Since React is rapidly changing with updates and new features, it forces its developers to update the way they write code in their project. This annoys most of the developers who are not comfortable with adopting new ways every Monday they start or the ones who are working on an application where changes are critical to customers.</li></ol>"
@@ -1484,10 +1529,7 @@
                 "name": "How to avoid the need for binding in React?",
                 "description": "<p>#1. Define Your Event Handler as an Inline Arrow Function <br><img src='./assets/react/eventBind3.png'><br><br>#2. Define Your Event Handler as an Arrow Function Assigned to a Class Field<br><img src='./assets/react/eventBind4.png'><br><br>#3. Use a Function Component with Hooks<br><img src='./assets/react/eventBind5.png'></p>"
             },
-            {
-                "name": "Difference between React vs Angular",
-                "description": "<p>React is better than Angular due to it's virtual DOM implementation and rendering optimizations. Migrating between React's versions is quite easy, too; you don't need to install updates one by one, as in the case of Angular.<br><br>Angular is a TypeScript-based web application framework, whereas React JS is a JavaScript-based library.<br><br>Angular is used to build single-page applications using HTML and TypeScript. React JS is commonly used to create user interfaces for single-page applications from isolated components.<br><br>Using a library such as React can give a project a greater ability to evolve parts of the system—again for example, state management—over time, when new solutions are created by the open source community.</p>"
-            },
+            
             {
                 "name": "What is the order of useInsertionEffect, useEffect and useLayoutEffect hooks at component generation",
                 "description": "<p><code>useInsertionEffect</code> - It fires synchronously <strong>before</strong> all DOM mutations. Use this to inject styles into the DOM <strong>before</strong> reading layout in <code>useLayoutEffect</code>. So it runs before <code>useLayoutEffect</code>.<br><br><code>useLayoutEffect</code> - It fires synchronously <strong>after</strong> all DOM mutations. Use this to read layout from the DOM and synchronously re-render.<br><br><code>useEffect</code> - It will run after the render is committed to the screen. So it runs after <code>useLayoutEffect</code>.<br><br>Therefore the order of running is:</p><ol><li>useInsertionEffect</li><li>useLayoutEffect</li><li>useEffect</li></ol>"
