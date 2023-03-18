@@ -800,6 +800,10 @@
                 "description": "<p><img src='./assets/jsCode/sumofarray.png'><br><img src='./assets/jsCode/sumofarray1.png'></p>" 
             },
             {
+                "name": "sum all nonnegative integers up to n",
+                "description": "" 
+            },
+            {
                 "name": "Output - delete operator with Emp Object prototype",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/delete1.png'><br><br><p><strong>Answer</strong> - Above code will output <strong>xyz</strong> as output. Here <strong>emp1</strong> object got company as prototype property. <strong>delete</strong> operator doesn't delete prototype property.<br><br><strong>emp1</strong> object doesn't have <strong>company</strong> as its own property. You can test it like:<br><br><img src='./assets/jsCode/delete2.png'><br><br>However, we can delete company property directly from <strong>Employee</strong> object using <strong>delete Employee.company</strong> or we can also delete from <strong>emp1</strong> object using <strong>__proto__</strong> property <strong> delete emp1.__proto__.company</strong>.</p>"
             },
