@@ -586,7 +586,6 @@
                 "name": "Output - Closures, Currying, and Higher-Order Functions with returning multiple values from the function",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/problem7.png'><br><br><strong>Answer: </strong> The result is <strong>6 10</strong> because <br><strong>#1.</strong> In the first statement  we get back the array [𝟲, function(z) { return 2 * 3 + z; }]. so calling mul(2)(3)[0] evaluates to the first element of the array returned by the inner function, which is the product of 2 and 3, i.e., <strong>6</strong>. <br><strong>#2.</strong> //returning index 1, which returns the function that takes z as a parameter. i.e., calls the second closure in the array with an argument of 4, and once z is passed to the function it returns 2*3 + 4 = <strong>10</strong>.</p>"
             },
-            
             {
                 "name": "Output - Object Key using square bracket operator",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/objectkey.png'><br><br><strong>Answer:</strong> The result is <strong>Jayesh 24</strong> because value of the key can be any expression as long as it is wrapped in brackets []. The result of an expression enclosed in brackets becomes the property name. i.e., age</p>"
@@ -781,6 +780,30 @@
                 "description": "<p><img src='./assets/jsCode/sumoftwo1.png'></p>"
             },
             {
+                "name": "Output - Sum of Squares of array list",
+                "description": "<p><strong>Problem</strong> - Write a function that sums squares of numbers in list that may contain more lists?<br><img src='./assets/jsCode/recursionsumarray1.png'><br><br><strong>Answer</strong><br><img src='./assets/jsCode/recursionsumarray.png'></p>" 
+            },
+            {
+                "name": "Output - Search JS object",
+                "description": "<p><strong>Problem</strong> - Write a function called contains that searches for a value in a nested object. It returns true if the object contains that value.<br><img src='./assets/jsCode/searchjsobject.png'><br><br><strong>Answer</strong><br><img src='./assets/jsCode/searchjsobject1.png'></p>" 
+            },
+            {
+                "name": "Output - Product of an array",
+                "description": "<p><strong>Problem</strong> - Write a function called productOfArray which takes in an array of numbers and returns the product of them all?<br><img src='./assets/jsCode/productofarray.png'><br><br><strong>Answer</strong><br><img src='./assets/jsCode/productofarray1.png'><br><br><img src='./assets/jsCode/productofarray2.png'><br><br><img src='./assets/jsCode/productofarray3.png'></p>" 
+            },
+            {
+                "name": "Output - check whether a number is even or not",
+                "description": "<p><img src='./assets/jsCode/evenodd.png'></p>" 
+            },
+            {
+                "name": "sum every integer element in an array",
+                "description": "<p><img src='./assets/jsCode/sumofarray.png'><br><img src='./assets/jsCode/sumofarray1.png'></p>" 
+            },
+            {
+                "name": "sum all nonnegative integers up to n",
+                "description": "" 
+            },
+            {
                 "name": "Output - delete operator with Emp Object prototype",
                 "description": "<p><strong>Problem</strong><br><img src='./assets/jsCode/delete1.png'><br><br><p><strong>Answer</strong> - Above code will output <strong>xyz</strong> as output. Here <strong>emp1</strong> object got company as prototype property. <strong>delete</strong> operator doesn't delete prototype property.<br><br><strong>emp1</strong> object doesn't have <strong>company</strong> as its own property. You can test it like:<br><br><img src='./assets/jsCode/delete2.png'><br><br>However, we can delete company property directly from <strong>Employee</strong> object using <strong>delete Employee.company</strong> or we can also delete from <strong>emp1</strong> object using <strong>__proto__</strong> property <strong> delete emp1.__proto__.company</strong>.</p>"
             },
@@ -932,6 +955,10 @@
                 "name": "Output - Recursion example 'display countdown numbers'",
                 "description": "<p><strong>Algorithm steps:</strong></p><ul><li>First, we iterate through the given number.</li><li>Then we decrease the number by 1 and store that value in a variable</li><li>Then we evaluate the new stored value against the condition greater than 0, if it is then we again trigger the countdown function.</li></ul><p><img src='./assets/jsCode/recursioncountdown.png'></p>"
             },
+            {
+                "name": "Output - Recursion example 'display 1 to 10 from array'",
+                "description": "<p><img src='./assets/jsCode/recursioncountdown1.png'><br><img src='./assets/jsCode/recursioncountdown2.png'></p>" 
+            }, 
             {
                 "name": "Output - Find Factorial",
                 "description": "<p>The factorial function says to multiply all the whole numbers from the chosen number down to one. In more mathematical terms, the factorial of a number <strong>(n!) is equal to n(n-1)</strong>.<br><br><img src='./assets/jsCode/factorial.png'></p>"
