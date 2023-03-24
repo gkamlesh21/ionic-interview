@@ -693,7 +693,11 @@
             },
             {
                 "name": "Output - What is the output of the below code and why?(identity)",
-                "description": "<p><img src='./assets/jsCode/problem2.png'><br><br><strong>Problem</strong>What is the issue with the code and how can it be fixed?<br><br>The output logged will be:</p><strong><code>undefined<br>Johnny Deep</code></strong><p>The first console.log prints <strong>undefined</strong> because heroIdentity()is been invoked in the global context (i.e., the window object) where the <strong>_name</strong> property doesn’t exists.<br><br>The other way to fix it is by binding, it to hero object by using bind.</p><strong><code>var heroIdentity = hero.getIdentity.bind(hero);</code></strong>"
+                "description": "<p><img src='./assets/jsCode/problem2.png'><br><br><strong>Problem</strong>What is the issue with the code and how can it be fixed?<br><br>The output logged will be:</p><strong><code>undefined<br>Johnny Deep</code></strong><p>The first console.log prints <strong>undefined</strong> because heroIdentity() is been invoked in the global context (i.e., the window object) where the <strong>_name</strong> property doesn’t exists.<br><br>The other way to fix it is by binding, it to hero object by using bind.</p><strong><code>var heroIdentity = hero.getIdentity.bind(hero);</code></strong>"
+            },
+            {
+                "name": "Deep / Nested Compare JavaScript Objects",
+                "description": "<p><strong>#1. Angular: angular.equals(obj1, obj2) : </strong>The Angular library also provides a method that helps us to determine deep equality between two objects. This method is provided under the ng module. It takes two parameters, the operands, to be compared for equality and returns a Boolean value indicating whether the operands are equal based on JavaScript strict equality (===).<br><img src='./assets/jsCode/nestedcompareobj.png'><br><br><strong>#2. JSON.stringify() method : </strong>in this method, we convert our two objects into strings using the JSON.stringify() method and compare the two values to determine whether the objects are deep equal. Even if the objects have nested properties, this method can handle those as well.<br><img src='./assets/jsCode/jsoncompareobj.png'></p>" 
             },
             {
                 "name": "Output - What is the output of the below code and why? (arguments / method)",
@@ -1122,6 +1126,34 @@
             {
                 "name": "What is interpolation?",
                 "description": "<p>It is represented by double curly braces({{}}). The text between the braces is often the name of a component property. Angular replaces that name with the string value of the corresponding component property.</p>"
+            },
+            {
+                "name": "String interpolation in TypeScript?  ",
+                "description": "<ul><li>You can use <em>template iterals</em>,</li><li><em>Template literals</em> are literals delimited with backticks<code>(`)</code>.</li></ul><br><pre>let value = 100;<br>console.log(`The size is ${value}`);</pre>" 
+            },
+            {
+                "name": "How could you check null and undefined in TypeScript?",
+                "description": "<p>Just use: <br><pre>if(value){<br>}</pre><br>It will evaluate to <strong>true</strong> if <strong>value</strong> is not: <strong>null, undefined, NaN, empty string '', 0, false</strong></p>" 
+            },
+            {
+                "name": "Nullish operator (??) ?",
+                "description": "<p>The <strong>nullish coalescing operator (<code>??</code>)</strong> is a logical operator that returns its right-hand side operand when its left-hand side operand is <code>null</code> or <code>undefined</code>, and otherwise returns its left-hand side operand.Its main purpose is to simplify <em>assigning default values</em>. The <em>nullish coalescing</em> operator tests for <code>null</code> and <code>undefined</code> only.</p>" 
+            },
+            {
+                "name": "What does the pipe, | mean in TypeScript? ",
+                "description": "<ul><li>This is called <code>union</code> type in TypeScript. A <code>union</code> type describes a value that <em>can be one of several types</em>.</li><li><code>Pipe(|)</code> is used to <em>separate each type</em>. So, for example <code>number | string | boolean</code> is the type of a value that can be a <code>number</code>, a <code>string</code>, or a <code>boolean</code>.</li></ul>" 
+            },
+            {
+                "name": "What is Optional Chaining in TypeScript?",
+                "description": "<p>An <strong>optional chain</strong> is an optional expression followed by one or more subsequent regualr <em>property access, element access, or call argument lists</em>:</p>" 
+            },
+            {
+                "name": "What is the difference between unknown and any type?",
+                "description": "<ul><li><code>unknown</code> is the type-safe counterpart of <code>any</code></li><li>Anything is assignable to <code>unknown</code></li><li>But <code>unknown</code> isn't assignable to anything but itself and <code>any</code> without a type assertion or a control flow based narrowing</li><li>Likewise no operations are permitted on an <code>unknown</code> without first asserting or narrowing to a more specific type.</li></ul>" 
+            },
+            {
+                "name": "Double Exclamation Operator (!!)",
+                "description": "<p>In JavaScript, the double exclamation operator converts an <strong>Object</strong> to <strong>Boolean</strong>. This happens such that “falsy” objects become <strong>false</strong> and “truthy” objects become <strong>true</strong>.</p><ul><li><strong>!! 0</strong> –&gt; <strong>false</strong></li><li><strong>!! null</strong> –&gt; <strong>false</strong></li><li><strong>!! undefined</strong> –&gt; <strong>false</strong></li><li><strong>!! 48</strong> –&gt; <strong>true</strong></li><li><strong>!! “hello”</strong> –&gt; <strong>true</strong></li><li><strong>!! [1, 2, 3]</strong> –&gt; <strong>true</strong></li></ul><p>When you apply the not operator twice on a JavaScript object, here is what happens:</p><ul><li>The first <strong>not</strong> operator converts the object to an inverted boolean value.</li><li>The second <strong>not</strong> operator inverts the inverted boolean value. In other words, this makes it the real boolean value of the object. </li></ul>" 
             },
 			{
                 "name": "What are template expressions?",
